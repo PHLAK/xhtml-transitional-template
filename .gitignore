@@ -1,0 +1,6 @@
+# Ignore all files starting with a period except .gitignore
+.*
+!.gitignore
+
+# Additional ignore rules
+Thumbs.db
