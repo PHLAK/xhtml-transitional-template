@@ -1,8 +1,0 @@
-/*
-  This file contains css that will be executed only if
-  the browser is IE and will override other styles.
-*/
-
-#content pre {
-  min-height: 35px;
-}
