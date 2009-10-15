@@ -1,25 +1,15 @@
-<?php
-  // Get current page file name ***REQUIRED FOR DYNAMIC MENU***
-  $page = basename($_SERVER["PHP_SELF"]);
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
 
 <head>
   <title>Home | Site Title</title>
-  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="shortcut icon" href="images/favicon.png" />
+
+  <link rel="stylesheet" type="text/css" href="css/rebase.css" />
+  <link rel="stylesheet" type="text/css" href="css/structure.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <!--[if IE]><link rel="stylesheet" type="text/css" href="css/ie-fixes.css" /><![endif]-->
-  <link rel="shortcut icon" href="images/favicon.gif" />
+
   <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/jquery.corners.js"></script>
-  <script type="text/javascript">
-    $(function(){
-      $('div.rounded').corner();
-    });
-  </script>
 </head>
 
 <body>
@@ -69,23 +59,19 @@
 
 
   <div id="footer">
-    <span class="left">&copy; <?php echo(date('Y'));?>
+    <span class="left">&copy; 2009
       <strong>&middot;</strong> Chris Kankiewicz
-      <strong>&middot;</strong> <a href="legal.php">Some Rights Reserved</a>
+      <strong>&middot;</strong> Some Rights Reserved
     </span>
     <span class="right">
-      <?php
-        if (file_exists('sitemap.xml')) {
-          echo "<a href=\"sitemap.xml\" target=\"_blank\">Sitemap</a> <strong>&middot;</strong> ";
-        }
-      ?>
-      Design by, <a href="http://www.web-geek.net">Chris Kankiewicz</a>
+      <a href="sitemap.xml" target="_blank">Sitemap</a> <strong>&middot;</strong>
+      Design by, <a href="http://www.chriskankiewicz.com">Chris Kankiewicz</a>
     </span>
   </div>
 
 </div>
 
-<!-- Page design by, Chris Kankiewicz <http://www.web-geek.net> -->
+<!-- Page template by, Chris Kankiewicz <http://www.chriskankiewicz.com> -->
 
 <!--
 0100100100100000011001000110111100100000011011100110111101110100
