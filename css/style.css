@@ -1,22 +1,22 @@
-/*
- *  NAME:    XHTML_Transitional_Template
- *  AUTHOR:  Chris Kankiewicz
- *  URL:     http://www.ChrisKankiewicz.com
- *  EMAIL:   Chris@ChrisKankiewicz.com
- */
-
-/************
-*  GENERAL  *
-************/
+/****************************************************************\
+|**********|                                          |**********|
+|**********|    <website-name.com> site stylesheet    |**********|
+|**********|            By, <author name>             |**********|
+|**********|                                          |**********|
+\****************************************************************/
+ 
+/* --------------------- */
+/* -----| GENERAL |----- */
+/* --------------------- */
 
 html {
-  background-color: #FFF;
+  font-size: 100%;
 }
 
 body {
   color: #333;
-  font-family:  sans-serif, Sans, Verdana, Tahoma, Helvetica;
-  font-size: 100%;
+  font-family:  Sans-Serif, Verdana, Tahoma, Helvetica, Arial, Sans;
+  font-size: 1em;
 }
 
 a {
@@ -33,9 +33,10 @@ a:hover {
   width: 760px;
 }
 
-/***********
-*  HEADER  *
-***********/
+
+/* -------------------- */
+/* -----| HEADER |----- */
+/* -------------------- */
 
 #header h1 {
   font-size: 1.5em;
@@ -43,9 +44,10 @@ a:hover {
   margin: 5px 0;
 }
 
-/***************
-*  NAVIGATION  *
-***************/
+
+/* ------------------------ */
+/* -----| NAVIGATION |----- */
+/* ------------------------ */
 
 ul#navigation {
   background-color: #CCC;
@@ -75,9 +77,9 @@ ul#navigation li a:hover {
 }
 
 
-/************
-*  CONTENT  *
-************/
+/* --------------------- */
+/* -----| CONTENT |----- */
+/* --------------------- */
 
 #content p {
   font-size: .9em;
@@ -133,9 +135,10 @@ ul#navigation li a:hover {
   padding: 5px;
 }
 
-/***********
-*  FOOTER  *
-***********/
+
+/* -------------------- */
+/* -----| FOOTER |----- */
+/* -------------------- */
 
 #footer {
   background-color: #DDD;
@@ -154,15 +157,47 @@ ul#navigation li a:hover {
   float: right;
 }
 
-/*********
-*  MISC  *
-*********/
 
-.clear {
-  clear: both;
-  height: 0 !important;
-  margin: 0;
-  padding: 0;
+/* --------------------------- */
+/* -----| MISCELLANEOUS |----- */
+/* --------------------------- */
+
+/* --- FLOATS --- */
+
+.left {
+	float: left;
+	width: auto;
 }
 
+.right {
+	float: right;
+	width: auto;
+}
 
+/* --- TEXT ALIGNMENT --- */
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+/* --- CLEAR FIX --- */
+
+.clearfix:after {
+	content: ".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;}
+.clearfix {display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height:1%;}
+.clearfix {display:block;}
+/* End hide from IE-mac */
