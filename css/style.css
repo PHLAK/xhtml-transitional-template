@@ -1,13 +1,6 @@
-/****************************************************************\
-|**********|                                          |**********|
-|**********|    <website-name.com> site stylesheet    |**********|
-|**********|            By, <author name>             |**********|
-|**********|                                          |**********|
-\****************************************************************/
- 
-/* --------------------- */
-/* -----| GENERAL |----- */
-/* --------------------- */
+/* -------------------------------------------------------------------------- */
+/* -----| GENERAL |---------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 
 html {
   font-size: 100%;
@@ -15,189 +8,46 @@ html {
 
 body {
   color: #333;
-  font-family:  Sans-Serif, Verdana, Tahoma, Helvetica, Arial, Sans;
+  font-family:  Arial, Helvetica, Verdana, sans-serif;
   font-size: 1em;
 }
 
 a {
   color: #00F;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-#wrapper {
-  margin: 0px auto;
-  width: 760px;
-}
 
-
-/* -------------------- */
-/* -----| HEADER |----- */
-/* -------------------- */
-
-#header h1 {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin: 5px 0;
-}
-
-
-/* ------------------------ */
-/* -----| NAVIGATION |----- */
-/* ------------------------ */
-
-ul#navigation {
-  background-color: #CCC;
-  float: left;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1em;
-  width: 100%;
-}
-
-ul#navigation li {
-  display: inline;
-  margin: 0;
-}
-
-ul#navigation li a {
-  border-right: 1px solid #FFF;
-  color: #333;
-  display: inline;
-  float: left;
-  padding: 6px 8px;
-}
-
-ul#navigation li a:hover {
-  background-color: #AAA;
-  text-decoration: none;
-}
-
-
-/* --------------------- */
-/* -----| CONTENT |----- */
-/* --------------------- */
-
-#content p {
-  font-size: .9em;
-  line-height: 1.2em;
-  margin: 0 0 1.5em 0;
-}
-
-#content h1 {
-  font-size: 1.5em;
-  margin: .8em 0 .5em 0;
-}
-
-#content h2 {
-  font-size: 1.2em;
-  margin: .8em 0 .5em 0;
-}
-
-#content h3 {
-  font-size: 1em;
-  margin: .8em 0 .5em 0;
-}
-
-#content h4 {
-  font-size: .8em;
-  margin: .8em 0 .5em 0;
-}
-
-#content h5 {
-  font-size: .7em;
-  margin: .8em 0 .5em 0;
-}
-
-#content div.hr {
-  background-color: #333;
-  border: 0;
-  height: 1px;
-  margin: 1.2em 0;
-  width: 100%;
-}
-
-#content div.hr hr {
-  display: none;
-}
-
-#content pre {
-  background-color: #DDD;
-  color: #000;
-  display: block;
-  font-size: 13px;
-  line-height: 17px;
-  margin: .8em 1.5em;
-  overflow: auto;
-  padding: 5px;
-}
-
-
-/* -------------------- */
-/* -----| FOOTER |----- */
-/* -------------------- */
-
-#footer {
-  background-color: #DDD;
-  font-size: .75em;
-  float: left;
-  margin: 1em 0;
-  padding: 5px;
-  width: 100%;
-}
-
-#footer .left {
-  float: left;
-}
-
-#footer .right {
-  float: right;
-}
-
-
-/* --------------------------- */
-/* -----| MISCELLANEOUS |----- */
-/* --------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -----| MISCELLANEOUS |---------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 
 /* --- FLOATS --- */
 
-.left {
+.floatLeft {
 	float: left;
 	width: auto;
 }
 
-.right {
+.floatRight {
 	float: right;
 	width: auto;
 }
 
 /* --- TEXT ALIGNMENT --- */
 
-.text-left {
+.textLeft {
 	text-align: left;
 }
 
-.text-center {
+.textCenter {
 	text-align: center;
 }
 
-.text-right {
+.textRight {
 	text-align: right;
 }
-
-/* --- CLEAR FIX --- */
-
-.clearfix:after {
-	content: ".";
-	display:block;
-	height:0;
-	clear:both;
-	visibility:hidden;}
-.clearfix {display:inline-block;}
-/* Hides from IE-mac \*/
-* html .clearfix { height:1%;}
-.clearfix {display:block;}
-/* End hide from IE-mac */
