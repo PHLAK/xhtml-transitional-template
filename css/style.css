@@ -3,22 +3,46 @@
 /* -------------------------------------------------------------------------- */
 
 html {
-  font-size: 100%;
+    background: #E3E3E3 url(../images/diagonal-noise.png) repeat center top;
+    font-size: 100%;
 }
 
 body {
-  color: #333;
-  font-family:  Arial, Helvetica, Verdana, sans-serif;
-  font-size: 1em;
+    color: #333;
+    font-family:  Arial, Helvetica, Verdana, sans-serif;
+    font-size: 1em;
 }
 
 a {
-  color: #00F;
-  text-decoration: underline;
+    color: #FFF;
+    text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| CONTENT |---------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#wrap {
+    background-color: #555;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 25px;
+    color: #FFF;
+    margin: 60px auto;
+    padding: 100px;
+    width: 600px;
+}
+
+#wrap h1 {
+    margin: 0 0 1em;
+}
+
+#wrap p {
+    margin: 0;
 }
 
 
@@ -26,28 +50,19 @@ a:hover {
 /* -----| MISCELLANEOUS |---------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-/* --- FLOATS --- */
-
-.floatLeft {
-	float: left;
-	width: auto;
-}
-
-.floatRight {
-	float: right;
-	width: auto;
-}
-
-/* --- TEXT ALIGNMENT --- */
-
 .textLeft {
-	text-align: left;
+    text-align: left;
 }
 
 .textCenter {
-	text-align: center;
+    text-align: center;
 }
 
 .textRight {
-	text-align: right;
+    text-align: right;
 }
+
+/**
+ * XHTML Transitional Template styles created and implimented by,
+ * Chris Kankiewicz -- http://www.ChrisKankiewicz.com
+ */
